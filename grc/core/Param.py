@@ -306,11 +306,13 @@ class Param(Element):
                 'real': Constants.FLOAT_COLOR_SPEC,
                 'float': Constants.FLOAT_COLOR_SPEC,
                 'int': Constants.INT_COLOR_SPEC,
+                'bits': Constants.BIT_COLOR_SPEC,
                 # Vector types
                 'complex_vector': Constants.COMPLEX_VECTOR_COLOR_SPEC,
                 'real_vector': Constants.FLOAT_VECTOR_COLOR_SPEC,
                 'float_vector': Constants.FLOAT_VECTOR_COLOR_SPEC,
                 'int_vector': Constants.INT_VECTOR_COLOR_SPEC,
+                'bits_vector': Constants.BIT_VECTOR_COLOR_SPEC,
                 # Special
                 'bool': Constants.INT_COLOR_SPEC,
                 'hex': Constants.INT_COLOR_SPEC,

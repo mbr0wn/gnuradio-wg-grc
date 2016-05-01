@@ -1,5 +1,5 @@
 """
-Copyright 2008-2015 Free Software Foundation, Inc.
+Copyright 2008-2016 Free Software Foundation, Inc.
 This file is part of GNU Radio
 
 GNU Radio Companion is free software; you can redistribute it and/or
@@ -90,6 +90,8 @@ GRC_COLOR_LIGHT_PURPLE = '#E040FB'
 GRC_COLOR_DARK_GREY = '#72706F'
 GRC_COLOR_GREY = '#BDBDBD'
 GRC_COLOR_WHITE = '#FFFFFF'
+GRC_COLOR_PURPLE_A100 = '#EA80FC'
+GRC_COLOR_PURPLE_A400 = '#D500F9'
 
 CORE_TYPES = (  # name, key, sizeof, color
     ('Complex Float 64', 'fc64', 16, GRC_COLOR_BROWN),
@@ -104,6 +106,7 @@ CORE_TYPES = (  # name, key, sizeof, color
     ('Integer 32', 's32', 4, GRC_COLOR_TEAL),
     ('Integer 16', 's16', 2, GRC_COLOR_YELLOW),
     ('Integer 8', 's8', 1, GRC_COLOR_LIGHT_PURPLE),
+    ('Bits (unpacked byte)', 'bit', 1, GRC_COLOR_PURPLE_A100),
     ('Message Queue', 'msg', 0, GRC_COLOR_DARK_GREY),
     ('Async Message', 'message', 0, GRC_COLOR_GREY),
     ('Bus Connection', 'bus', 0, GRC_COLOR_WHITE),
@@ -116,6 +119,7 @@ ALIAS_TYPES = {
     'int': (4, GRC_COLOR_TEAL),
     'short': (2, GRC_COLOR_YELLOW),
     'byte': (1, GRC_COLOR_LIGHT_PURPLE),
+    'bits': (1, GRC_COLOR_PURPLE_A100),
 }
 
 TYPE_TO_COLOR = dict()
@@ -135,11 +139,13 @@ FLOAT_COLOR_SPEC = '#FF8C69'
 INT_COLOR_SPEC = '#00FF99'
 SHORT_COLOR_SPEC = '#FFFF66'
 BYTE_COLOR_SPEC = '#FF66FF'
+BIT_COLOR_SPEC = GRC_COLOR_PURPLE_A100
 COMPLEX_VECTOR_COLOR_SPEC = '#3399AA'
 FLOAT_VECTOR_COLOR_SPEC = '#CC8C69'
 INT_VECTOR_COLOR_SPEC = '#00CC99'
 SHORT_VECTOR_COLOR_SPEC = '#CCCC33'
 BYTE_VECTOR_COLOR_SPEC = '#CC66CC'
+BIT_VECTOR_COLOR_SPEC = GRC_COLOR_PURPLE_A400
 ID_COLOR_SPEC = '#DDDDDD'
 WILDCARD_COLOR_SPEC = '#FFFFFF'
 MSG_COLOR_SPEC = '#777777'
